@@ -1,0 +1,30 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+    <div class="my-56 px-11">
+        <center>
+            <h1 class=" text-white text-[48px]">Om Mudgal</h1>
+            <h3 class="text-white">Learn, Create, Improve</h3>
+        </center>
+    </div>
+    <div class="text-white content-center bg-red" >
+        <center>    
+            <h1>BLENDER</h1>
+        </center>
+        
+    </div>
+    <div class="flex justify-evenly">
+        <div class="bg-slate-800  p-8 bg-red-800 rounded-l-lg">
+            <video  autoplay muted loop>
+                <source src="{% static 'video/spyder.mp4' %}" type="video/mp4">
+              </video>
+        </div>
+        <div class="bg-slate-800  p-8 bg-slate-800 rounded-r-lg">
+            <video  autoplay muted loop>
+                <source src="{% static 'video/room.mp4' %}" type="video/mp4">
+            </video>
+        </div>
+                
+    </div>
+
+{% endblock %}
